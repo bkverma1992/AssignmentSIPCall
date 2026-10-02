@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoSIP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxo-8X-DqT">
+                                <rect key="frame" x="20" y="737" width="353" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lad-62-NEF"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="END Call ">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEndCallAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIN-ko-5Fb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yan-cU-Kvv">
+                                <rect key="frame" x="20" y="680" width="353" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QjE-Md-PlQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Call "/>
+                                <connections>
+                                    <action selector="buttonCallAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igR-0F-GrF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter SIP Nmbr" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YDc-NO-6eV">
+                                <rect key="frame" x="20" y="231" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIP Voice Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqP-9u-8FG">
+                                <rect key="frame" x="20" y="135" width="125" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIP Number / Extension" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfN-9a-AaN">
+                                <rect key="frame" x="20" y="200" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIP Registred" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCx-Wy-A2p">
+                                <rect key="frame" x="145.66666666666666" y="797" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIP Voice Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAb-gb-gdm">
+                                <rect key="frame" x="269" y="136.66666666666666" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHs-Lj-gUf">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="s0t-cO-ROn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo SIP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-iu-Fp4">
+                                <rect key="frame" x="19.999999999999993" y="79" width="117.33333333333331" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQR-bs-LN3">
+                                <rect key="frame" x="0.0" y="174" width="393" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="46U-qw-UCO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mCe-iu-Fp4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1Xc-KX-wel"/>
+                            <constraint firstItem="zCx-Wy-A2p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Ju-IP-dOX"/>
+                            <constraint firstItem="lqP-9u-8FG" firstAttribute="top" secondItem="mCe-iu-Fp4" secondAttribute="bottom" constant="28" id="4zp-5s-LwW"/>
+                            <constraint firstItem="rHs-Lj-gUf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5AB-GF-MjH"/>
+                            <constraint firstItem="jxo-8X-DqT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6s6-9K-fJW"/>
+                            <constraint firstItem="FfN-9a-AaN" firstAttribute="top" secondItem="DQR-bs-LN3" secondAttribute="bottom" constant="25" id="AWf-Om-tzV"/>
+                            <constraint firstItem="YDc-NO-6eV" firstAttribute="top" secondItem="FfN-9a-AaN" secondAttribute="bottom" constant="10" id="InM-qP-nQj"/>
+                            <constraint firstItem="lqP-9u-8FG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JnH-Ou-Nxw"/>
+                            <constraint firstItem="rHs-Lj-gUf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kdg-d7-Aez"/>
+                            <constraint firstItem="iAb-gb-gdm" firstAttribute="centerY" secondItem="lqP-9u-8FG" secondAttribute="centerY" id="LrP-aO-Uqs"/>
+                            <constraint firstItem="jxo-8X-DqT" firstAttribute="top" secondItem="yan-cU-Kvv" secondAttribute="bottom" constant="17" id="NrV-eI-sUE"/>
+                            <constraint firstItem="zCx-Wy-A2p" firstAttribute="top" secondItem="jxo-8X-DqT" secondAttribute="bottom" constant="20" id="RnA-Ed-W0C"/>
+                            <constraint firstItem="yan-cU-Kvv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="S3l-Hr-fjY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zCx-Wy-A2p" secondAttribute="bottom" id="Ytl-sJ-SsC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YDc-NO-6eV" secondAttribute="trailing" constant="20" id="ZXN-UJ-FEi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iAb-gb-gdm" secondAttribute="trailing" constant="20" id="eAb-Gx-pWW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jxo-8X-DqT" secondAttribute="trailing" constant="20" id="ebg-g2-Dyh"/>
+                            <constraint firstItem="DQR-bs-LN3" firstAttribute="top" secondItem="lqP-9u-8FG" secondAttribute="bottom" constant="15" id="gZH-cc-96d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yan-cU-Kvv" secondAttribute="trailing" constant="20" id="hph-cJ-1ES"/>
+                            <constraint firstItem="FfN-9a-AaN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nla-x1-j5k"/>
+                            <constraint firstItem="rHs-Lj-gUf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qDx-EN-GGy"/>
+                            <constraint firstItem="DQR-bs-LN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sig-xu-30S"/>
+                            <constraint firstItem="mCe-iu-Fp4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vk4-MY-n9n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DQR-bs-LN3" secondAttribute="trailing" id="x9z-I1-oYo"/>
+                            <constraint firstItem="YDc-NO-6eV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ydG-gE-Tu2"/>
+                            <constraint firstItem="lqP-9u-8FG" firstAttribute="top" secondItem="rHs-Lj-gUf" secondAttribute="bottom" constant="15" id="zPx-B8-2CV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnEndCall" destination="jxo-8X-DqT" id="NJ5-ah-8hm"/>
+                        <outlet property="btnnCall" destination="yan-cU-Kvv" id="xEl-kE-K1P"/>
+                        <outlet property="lblCallStatus" destination="iAb-gb-gdm" id="RMx-Mm-Qab"/>
+                        <outlet property="lblSIPStatus" destination="zCx-Wy-A2p" id="K2y-1E-IZa"/>
+                        <outlet property="tfSIP" destination="YDc-NO-6eV" id="ee5-2m-QBG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-49.295774647887328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

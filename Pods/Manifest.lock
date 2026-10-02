@@ -1,0 +1,16 @@
+PODS:
+  - pjsip (2.9.0.2)
+
+DEPENDENCIES:
+  - pjsip (~> 2.9)
+
+SPEC REPOS:
+  trunk:
+    - pjsip
+
+SPEC CHECKSUMS:
+  pjsip: faa8aa0e79b341155801b87c2ea3015003d05ed9
+
+PODFILE CHECKSUM: 934b73ad06393bf354289385b4404d37fc2f4f1d
+
+COCOAPODS: 1.15.2
